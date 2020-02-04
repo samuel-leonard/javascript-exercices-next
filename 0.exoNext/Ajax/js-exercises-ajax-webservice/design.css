@@ -1,0 +1,19 @@
+body {
+    background-color: rebeccapurple;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+}
+
+img {
+
+    margin: auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}

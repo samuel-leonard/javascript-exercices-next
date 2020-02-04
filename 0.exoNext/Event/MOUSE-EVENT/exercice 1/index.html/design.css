@@ -1,0 +1,34 @@
+body {
+    display: flex;
+}
+
+.hoverMe {
+    height: 300px;
+    width: 300px;
+    background-color: red;
+    border: 1px black solid;
+    margin-left: 20px;
+
+}
+#targetY {
+    height:50px;
+    width:50px;
+    display:block;
+    margin:auto;
+    border: 1px solid black;
+    background-color: chartreuse;
+    margin-top:25px;
+    text-align:center;
+
+}
+#targetX{
+      height:50px;
+    width:50px;
+    display:block;
+    margin:auto;
+    border: 1px solid black;
+    background-color: chartreuse;
+    margin-top:25px;
+    text-align:center;
+
+}
