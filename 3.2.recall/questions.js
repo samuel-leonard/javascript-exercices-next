@@ -129,46 +129,78 @@ let longestWord = (array) => {
 }
 
 let sumNumbers = (array) => {
-    return 'Write your method here';
+    let count = 0;
+    for (i = 0; i < array.length; i++) {
+        count = count + array[i];
+    }
+    return count
 }
 
 let repeatElements = (array) => {
-    return 'Write your method here';
+    array.forEach(e => {
+        array.push(e);
+    })
+    return array;
 }
 
 let stringToNumber = (string) => {
-    return 'Write your method here';
+    let number = parseInt(string);
+    return number;
 }
+
 
 let calculateAverage = (array) => {
-    return 'Write your method here';
+    return array.reduce((a, b) => (a + b)) / array.length;
 }
+
+
 
 let getElementsUntilGreaterThanFive = (array) => {
-    return 'Write your method here';
+    array.splice(6, array.length);
+    return array;
 }
 
-let convertArrayToObject = (array) => {
-    array.split("");
+// let convertArrayToObject = (array) => {
+//     return Object.assign({}, array);
+// }
 
-    return Object.assign({}, array);
 
-}
+// let getAllLetters = (array) => {
+//     let data = array.split(",");
+//     console.log(data);
+// }
 
-let getAllLetters = (array) => {
-    return 'Write your method here';
-}
 
 let swapKeysAndValues = (object) => {
-    return 'Write your method here';
-}
+    let new_obj = {};
+
+    for (let prop in object) {
+        if (object.hasOwnProperty(prop)) {
+            new_obj[object[prop]] = prop;
+        }
+    }
+    console.log(new_obj);
+    return new_obj;
+};
+
 
 let sumKeysAndValues = (object) => {
-    return 'Write your method here';
+    let value = Object.values(object);
+    let keys = Object.keys(object);
+    keys.forEach(k => {
+        value.push(parseInt(k));
+    })
+    let result = 0;
+    value.forEach(r => {
+        result += r;
+    })
+    return (result);
 }
 
+
 let removeCapitals = (string) => {
-    return 'Write your method here';
+    
+    return(string.replace(/[A-Z]/g,""));
 }
 
 let roundUp = (number) => {
